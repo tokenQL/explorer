@@ -16,7 +16,7 @@ yarn install
 
 Update URLs
 
-https://github.com/leon-do/tokenQL-explorer/blob/3bb30f0406968ef71fbd9809af86df5804650122/src/App.js#L15-L16
+https://github.com/tokenQL/explorer/blob/3579fa576e8040947b16e8025970455c602d1be0/src/App.js#L15-L16
 
 Start the server:
 
