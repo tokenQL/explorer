@@ -9,8 +9,6 @@ Sign up at [https://www.onegraph.com](https://www.onegraph.com).
 Install dependencies:
 
 ```
-npm install
-# or
 yarn install
 ```
 
@@ -21,8 +19,6 @@ https://github.com/tokenQL/explorer/blob/3579fa576e8040947b16e8025970455c602d1be
 Start the server:
 
 ```
-npm run start
-# or
 yarn start
 ```
 
