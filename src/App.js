@@ -12,8 +12,8 @@ import "./App.css";
 
 import { FetcherParams, FetcherReturnType } from "graphiql/dist/components/GraphiQL";
 
-const queryUrl = "https://api.tokenql.com/v1/graphql";
-const subscriptionsClient = createClient({ url: "wss://api.tokenql.com/v1/graphql" });
+const queryUrl = "https://tokenql-256gb.hasura.app/v1/graphql";
+const subscriptionsClient = createClient({ url: "wss://api.tokenql-256gb.com/v1/graphql" });
 
 function isSubscription({ query, operationName }: FetcherParams) {
   const node = parse(query);
@@ -88,7 +88,7 @@ const DEFAULT_QUERY = `
 # curl 'https://api.tokenql.com/v1/graphql' --data-raw '{"query":"query MyQuery { Oasis_Mainnet_ERC20(where: {address: {_eq: \\"0xd06d611dadc3575b77b793c170d819d2ecd7d4de\\"}}) { address balance contract decimals id name symbol } }","variables":null,"operationName":"MyQuery"}'
 
 query MyQuery {
-  Oasis_Mainnet_ERC20(where: {address: {_eq: "0xd06d611dadc3575b77b793c170d819d2ecd7d4de"}}) {
+  Ethereum_Mainnet_ERC20(where: {address: {_eq: "0xd06d611dadc3575b77b793c170d819d2ecd7d4de"}}) {
     address
     balance
     contract
