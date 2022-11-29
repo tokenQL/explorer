@@ -85,8 +85,6 @@ export function fetcher(params) {
 }
 
 const DEFAULT_QUERY = `
-# curl 'https://api.tokenql.com/v1/graphql' --data-raw '{"query":"query MyQuery { Oasis_Mainnet_ERC20(where: {address: {_eq: \\"0xd06d611dadc3575b77b793c170d819d2ecd7d4de\\"}}) { address balance contract decimals id name symbol } }","variables":null,"operationName":"MyQuery"}'
-
 query MyQuery {
   Ethereum_Mainnet_ERC721(limit: 10) {
     address
