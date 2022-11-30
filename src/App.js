@@ -12,8 +12,8 @@ import "./App.css";
 
 import { FetcherParams, FetcherReturnType } from "graphiql/dist/components/GraphiQL";
 
-const queryUrl = "https://api.tokenql.com/v1/graphql";
-const subscriptionsClient = createClient({ url: "wss://api.tokenql.com/v1/graphql" });
+const queryUrl = "https://tokenql-256gb.hasura.app/v1/graphql";
+const subscriptionsClient = createClient({ url: "wss://tokenql-256gb.hasura.app/v1/graphql" });
 
 function isSubscription({ query, operationName }: FetcherParams) {
   const node = parse(query);
