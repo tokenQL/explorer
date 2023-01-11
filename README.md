@@ -24,6 +24,12 @@ yarn start
 
 Your browser will automatically open to http://localhost:3000 with the explorer open.
 
+## Deploy
+
+```
+yarn deploy
+```
+
 ## Live demo
 
 The example app is deployed to GitHub pages at [https://onegraph.github.io/graphiql-explorer-example/](https://onegraph.github.io/graphiql-explorer-example/) and is in use in production at [https://www.onegraph.com/graphiql](https://www.onegraph.com/graphiql).
