@@ -12,8 +12,8 @@ import "./App.css";
 
 import { FetcherParams, FetcherReturnType } from "graphiql/dist/components/GraphiQL";
 
-const queryUrl = "https://tokenql-256gb.hasura.app/v1/graphql";
-const subscriptionsClient = createClient({ url: "wss://tokenql-256gb.hasura.app/v1/graphql" });
+const queryUrl = "https://tokenql.hasura.app/v1/graphql";
+const subscriptionsClient = createClient({ url: "wss://tokenql.hasura.app/v1/graphql" });
 
 function isSubscription({ query, operationName }: FetcherParams) {
   const node = parse(query);
@@ -86,7 +86,7 @@ export function fetcher(params) {
 
 const DEFAULT_QUERY = `
 query MyQuery {
-  Ethereum_Mainnet_ERC721(limit: 10) {
+  Evmos_Mainnet_ERC721(limit: 10) {
     address
     balance
     contract
